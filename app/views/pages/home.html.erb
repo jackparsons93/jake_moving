@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        
+    </head>
+    <body>
+        
+        <div class="container px-4 px-lg-5">
+            <!-- Heading Row-->
+            <div class="row gx-4 gx-lg-5 align-items-center my-5">
+                <div class="col-lg-7">
+                <%#= image_tag ('new_logo.jpeg'), class: "img-fluid rounded mb-4 mb-lg-0" %></div>
+                <div class="col-lg-5">
+                    <h1 class="font-weight-light">Jake Lemmond Moving Business</h1>
+                    <p>Kansas city, Missouri</p>
+                    <%= link_to "Contact me Here", pages_contact_path, class: "btn btn-primary" %>
+                </div>
+            </div>
+            <!-- Call to Action-->
+            <div class="card text-white bg-secondary my-5 py-4 text-center">
+                <div class="card-body"><p class="text-white m-0">Ready to embark on a seamless moving experience? Contact us today for a free, no-obligation quote. Our friendly representatives are here to answer your questions and guide you through the process. At SmoothMove Relocations, we're not just moving your belongings – we're moving your life forward.</p></div>
+            </div>
+            <!-- Content Row-->
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Residential Moves:</h2>
+                            <p>
+                                Your home is where your heart is, and we understand the emotional significance of every item you own. Our team of dedicated professionals ensures that your belongings are handled with the utmost care, from packing and loading to unpacking and setup.
+                            </p>
+                        
+                        </div>
+                        <% more_info="More Info" %>
+                        <div class="card-footer"><%= link_to more_info , pages_contact_path, class: "btn btn-primary" %></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Commercial Moves: </h2>
+                             <p>
+                             Time is money, and our goal is to minimize downtime for your business. We specialize in efficient office relocations, making sure your equipment, documents, and furniture are relocated swiftly so you can get back to business in no time.
+
+
+                            </p>
+                        </div>
+                        <div class="card-footer"><%= link_to more_info, pages_contact_path, class: "btn btn-primary" %></a></div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Packing Services:</h2>
+                            <p class="card-text">Don't want to deal with the hassle of packing? Our skilled packers will securely pack everything, from fragile items to bulky furniture, using high-quality materials to ensure your possessions are well-protected during transit.</p>
+                        </div>
+                        <div class="card-footer"><%= link_to more_info, pages_contact_path, class: "btn btn-primary" %></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Bootstrap core JS-->
+       
+        <!-- Core theme JS-->
+        
+    </body>
+</html>
